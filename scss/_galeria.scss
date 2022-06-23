@@ -1,0 +1,30 @@
+.galeria{
+    height:auto;
+    width: 100%;
+    background-color: coral;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+.img{
+    border: 2px solid #fff0;
+    height:400px;
+}
+.img1{
+    background-image: url(/assets/img/fondopizzamasaavena.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.img2{
+    background-image: url(/assets/img/hamburguesadeatun1170x658.jpeg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}    
+.img3{
+    background-image: url(/assets/img/pechucadepollo960x658.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}

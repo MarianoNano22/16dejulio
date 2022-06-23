@@ -105,6 +105,11 @@ footer i {
 
 .consejos h1 {
   text-align: center;
+  padding-top: 15px;
+}
+
+p {
+  text-align: center;
 }
 
 .recomendacion {
