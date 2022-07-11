@@ -3,10 +3,10 @@ body {
 }
 
 .fondo-nav {
-  background-image: url(/assets/img/fondotitulo.jpg);
+  background-image: url(/assets/img/fondotitulo2.jpg);
   background-size: cover;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
@@ -15,6 +15,7 @@ body {
   width: 100%;
   background: orange;
   color: white;
+  font-size: 20px;
 }
 
 .video {
@@ -25,11 +26,15 @@ body {
 
 footer {
   text-align: center;
-  font-size: 25px;
+  background-image: url(/assets/img/Fondo.jpg);
+  background-position: 50%;
 }
 
 .fotter p {
   margin-bottom: 20px;
+  font-style: solid;
+  color: black;
+  font-size: 28px;
 }
 
 footer i {
@@ -43,11 +48,16 @@ footer i {
 }
 
 .somos {
-  min-height: 90px;
+  min-height: 80px;
   width: 100%;
-  font-size: 20px;
   text-align: center;
-  text-decoration: solid;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.somos p {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .mision {
@@ -64,18 +74,28 @@ footer i {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.mision p {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
 .vision {
   min-height: 200px;
   float: right;
   width: 49%;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
+  padding-right: 15px;
 }
 
 .vision h2 {
   text-align: center;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.vision p {
+  font-size: 20px;
 }
 
 .valores {
@@ -85,31 +105,39 @@ footer i {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 20px;
+  padding-right: 45px;
+  padding-left: 25px;
 }
 
 .valores h2 {
   text-align: center;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.valores p {
+  font-size: 20px;
 }
 
 .consejos {
   width: 100%;
-  padding-left: 25px;
-  padding-right: 25px;
-  font-size: 15px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 20px;
+  padding-left: 65px;
+  padding-right: 30px;
 }
 
 .consejos h1 {
   text-align: center;
   padding-top: 15px;
+  width: 100%;
 }
 
 p {
-  text-align: center;
+  text-align: justify;
 }
 
 .recomendacion {
@@ -143,39 +171,34 @@ p {
   padding-top: 25px;
 }
 
-.galeria {
-  height: auto;
-  width: 100%;
-  background-color: coral;
-  color: aliceblue;
-  padding: 10px;
+h2 {
+  padding-top: 20px;
   text-align: center;
+  font-size: large;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+  font-size: 25px;
 }
 
-.img {
-  border: 2px solid rgba(255, 255, 255, 0);
-  height: 400px;
+.carousel-inner {
+  align-items: center;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
 }
 
-.img1 {
-  background-image: url(/assets/img/fondopizzamasaavena.png);
-  background-size: cover;
-  background-position: center;
+h5 {
   text-align: center;
+  color: black;
+  font-size: 22px;
 }
 
-.img2 {
-  background-image: url(/assets/img/hamburguesadeatun1170x658.jpeg);
-  background-size: cover;
-  background-position: center;
+p {
+  color: black;
   text-align: center;
-}
-
-.img3 {
-  background-image: url(/assets/img/pechucadepollo960x658.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 @media only screen and (min-windth: 600px) and (max-width: 767px) {
@@ -196,25 +219,107 @@ p {
     grid-column: 3/3;
   }
 }
-.contacto {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.contacto h1 {
-  padding-top: 20px;
+a {
+  text-decoration: none;
+}
+
+body {
+  background: orange;
+  font-size: medium;
+  font-size: 16px;
+}
+
+.h1 {
+  margin-bottom: 20px;
+}
+
+.contenedor {
   width: 100%;
-  text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 1000px;
+  background: white;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 2px black;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.contacto h3 {
-  padding-top: 20px;
+.contenedor h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: black;
+}
+
+.contenido {
   width: 100%;
-  text-align: center;
+  overflow: hidden;
 }
 
-.mapa {
-  text-align: center;
+.contenido .info,
+.contenido, formulario {
+  width: 100%;
+}
+
+.info {
+  padding-left: 10px;
+}
+
+.info .col {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.info .col .icono {
+  color: green;
+  margin-right: 10px;
+}
+
+.info .col p {
+  color: #999;
+}
+
+.formulario input[type=text],
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border: 1px solid #999;
+  color: #999;
+  font-weight: 400;
+  outline: 0;
+  align-content: right;
+}
+
+.formulario textarea {
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+}
+
+.formulario input[type=text]:focus,
+.formulario textarea:focus {
+  border: 1px solid #15cf8A;
+}
+
+.formulario button {
+  padding: 12px 38px;
+  border: transparent;
+  background: #15cf8A;
+  color: #fff;
+  cursor: pointer;
+  float: right;
 }
 
 /*# sourceMappingURL=estilos.css.map */

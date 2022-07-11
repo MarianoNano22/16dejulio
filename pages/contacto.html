@@ -39,23 +39,36 @@
           </ul>
         </div>
     </nav>
-    <div class="contacto"><h1>CONTACTO </h1> <br><br><br>
-        <form action="enviar-formulario.php" method="post"><label>Nombre:</label> <br>
-            <input maxlength="50" name="nombre" required size="50" type="text" autofocus placeholder="Escribe tu nombre" /><br>
-            <label>Email:</label> <br>
-            <input name="email" required type="email" placeholder="Escribe tu email" /><br>
-            <label>Teléfono</label>
-            <input name="telefono" pattern="[0-9]{9}" required type="tel" placeholder="XXXXXXXXX" /> <br>
-                    <textarea cols="80" name="observaciones" rows="8">
-            Puedes escribir aquí tus observaciones...</textarea>
-            <input type="submit" value="Enviar" />
-            </form>
-        </div>  
-            <br>
-            <div class="mapa"><h3>MAPA</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.487275971047!2d-58.45360258501022!3d-34.61712456571407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca17fdb3ccff%3A0xce06e6c991749aad!2sFragata%20Pres.%20Sarmiento%20578%2C%20C1405APD%20CABA!5e0!3m2!1ses-419!2sar!4v1650408322180!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="contenedor">
+      <h1>CONTACTO</h1>
+      <div class="contenido">
+        <div class="info">
+          <div class="col">
+            <i class="icono fas fa-solid fa-map-location"></i>
+            <p> <a href="https://www.google.com/search?q=Anatole+France+2705+1712+Castelar%2C+Provincia+de+Buenos+Aires%2C+Argentina&oq=Anatole+France+2705+1712+Castelar%2C+Provincia+de+Buenos+Aires%2C+Argentina&aqs=chrome..69i57.1043j0j7&sourceid=chrome&ie=UTF-8#">Anatole France 2705 1712 Castelar, Provincia de Buenos Aires, Argentina</a> </p>
+          </div>
+          
+            <div class="col">
+              <i class="icono fas fa-envelope-open"></i>
+              <p> consultas@nutricoder.com.ar</p>
             </div>
-            <br>
+           
+              <div class="col">
+                <i class="icono fa-solid fa-phone"></i>
+                <p> (011) 1111-1111 </p> 
+              </div>
+        </div>
+        <form action="" method="get" class="formulario">
+
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre">
+            <input type="text" name="correo" placeholder="Mail" id="correo">
+            <input type="text" name="asunto" placeholder="Asunto" id="asunto">
+            <textarea name="mensaje" id="mesanje" placeholder="Mensaje"></textarea>
+            <button type="button">Enviar</button>
+
+        </form>
+      </div>
+    </div>
     <footer>
         <p>Todos los derechos reservados por Copyright 2022</p>
         <div class="redes">
